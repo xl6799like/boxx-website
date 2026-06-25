@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudStar 云星云朵盲盒 | 治愈毛绒潮玩盲盒</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        mainBlue: '#87C4FF',
+                        lightBlue: '#E8F4FF',
+                        darkBlue: '#3975C7',
+                        cloudWhite: '#F8FBFF'
+                    },
+                    fontFamily: {
+                        cute: ['system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {content-visibility: auto;}
+            .card-shadow {box-shadow: 0 8px 24px #87c4ff40;}
+            .cloud-border {border: 2px solid #87C4FF; border-radius: 22px;}
+            .hidden-tag {background: linear-gradient(135deg,#3975C7,#87C4FF);}
+        }
+    </style>
+</head>
+<body class="bg-cloudWhite font-cute text-gray-700 overflow-x-hidden">
+    <!-- 导航栏 -->
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md px-6 py-4 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-darkBlue">CloudStar 云星盲盒</h1>
+            <div class="hidden md:flex gap-8 text-sm">
+                <a href="#home" class="hover:text-darkBlue transition">首页</a>
+                <a href="#boxlist" class="hover:text-darkBlue transition">盲盒款式</a>
+                <a href="#flow" class="hover:text-darkBlue transition">购买流程</a>
+                <a href="#about" class="hover:text-darkBlue transition">关于我们</a>
+                <a href="#review" class="hover:text-darkBlue transition">玩家评价</a>
+            </div>
+            <button class="bg-mainBlue text-white px-5 py-2 rounded-full hover:bg-darkBlue transition">立即端盒</button>
+        </div>
+    </nav>
+
+    <!-- 首屏Banner -->
+    <section id="home" class="max-w-7xl mx-auto py-16 px-6 flex flex-col md:flex-row items-center gap-10">
+        <div class="md:w-1/2 space-y-6">
+            <h2 class="text-[42px] font-bold text-darkBlue leading-tight">云端棉花毛绒盲盒<br>把整片蓝天星星装进盒子里</h2>
+            <p class="text-gray-500 text-lg leading-relaxed">全部采用云朵毛绒肌理+晴空蓝底色+散落蓝星点缀，软萌纤细小动物造型，一共6款常规款+1款星光隐藏款，每一只都是独一无二的治愈小玩偶</p>
+            <div class="flex gap-4 pt-3">
+                <button class="bg-darkBlue text-white px-7 py-3 rounded-full">查看全部款式</button>
+                <button class="border border-mainBlue text-darkBlue px-7 py-3 rounded-full">了解隐藏款</button>
+            </div>
+        </div>
+        <div class="md:w-1/2 cloud-border overflow-hidden card-shadow">
+            <img src="images/tubiao.png" alt="云朵小羊" class="w-full h-auto">
+        </div>
+    </section>
+
+    <!-- 盲盒款式区域【核心：6常规+1隐藏】 -->
+    <section id="boxlist" class="bg-lightBlue py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-14">
+                <h3 class="text-3xl font-bold text-darkBlue mb-3">全套7款云朵星眠盲盒</h3>
+                <p class="text-gray-500">6只基础常规款 | 1只限量星光隐藏款 | 全系列统一云朵星星画风</p>
+            </div>
+            <!-- 6个常规盲盒 -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                <!-- 1 云咩·云朵小羊 -->
+                <div class="bg-white cloud-border card-shadow overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="h-72 overflow-hidden">
+                        <img src="images/yang.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-mainBlue bg-lightBlue px-2 py-1 rounded">常规款</span>
+                        <h4 class="text-xl font-bold mt-2">云咩｜云朵小羊</h4>
+                        <p class="text-gray-400 text-sm mt-2">温柔白羊，云朵绒毛柔和蓬松，蓝星环绕周身，整套温柔C位</p>
+                    </div>
+                </div>
+                <!-- 2 云粟·云朵仓鼠 -->
+                <div class="bg-white cloud-border card-shadow overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="h-72 overflow-hidden">
+                        <img src="images/su.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-mainBlue bg-lightBlue px-2 py-1 rounded">常规款</span>
+                        <h4 class="text-xl font-bold mt-2">云粟｜云朵仓鼠</h4>
+                        <p class="text-gray-400 text-sm mt-2">粉腮圆眼小仓鼠，蜷缩在云朵里，软萌天花板</p>
+                    </div>
+                </div>
+                <!-- 3 云糯·云朵小象 -->
+                <div class="bg-white cloud-border card-shadow overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="h-72 overflow-hidden">
+                        <img src="images/xiang.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-mainBlue bg-lightBlue px-2 py-1 rounded">常规款</span>
+                        <h4 class="text-xl font-bold mt-2">云糯｜云朵小象</h4>
+                        <p class="text-gray-400 text-sm mt-2">粉耳软鼻小象，纤细身形不臃肿，少女心爆款</p>
+                    </div>
+                </div>
+                <!-- 4 云叽·云朵小兔 -->
+                <div class="bg-white cloud-border card-shadow overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="h-72 overflow-hidden">
+                        <img src="images/tu.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-mainBlue bg-lightBlue px-2 py-1 rounded">常规款</span>
+                        <h4 class="text-xl font-bold mt-2">云叽｜云朵小兔</h4>
+                        <p class="text-gray-400 text-sm mt-2">修长软兔耳，轻盈灵动，整套元气担当</p>
+                    </div>
+                </div>
+                <!-- 5 云咪·云朵小猫 -->
+                <div class="bg-white cloud-border card-shadow overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="h-72 overflow-hidden">
+                        <img src="images/mao.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-mainBlue bg-lightBlue px-2 py-1 rounded">常规款</span>
+                        <h4 class="text-xl font-bold mt-2">云咪｜云朵小猫</h4>
+                        <p class="text-gray-400 text-sm mt-2">慵懒软萌小猫，浅蓝渐变绒毛，百搭耐看款</p>
+                    </div>
+                </div>
+                <!-- 6 云汪·云朵小狗 -->
+                <div class="bg-white cloud-border card-shadow overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="h-72 overflow-hidden">
+                        <img src="images/gou.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5">
+                        <span class="text-xs text-mainBlue bg-lightBlue px-2 py-1 rounded">常规款</span>
+                        <h4 class="text-xl font-bold mt-2">云汪｜云朵小狗</h4>
+                        <p class="text-gray-400 text-sm mt-2">垂耳温柔修勾，乖乖趴在云端，治愈感拉满</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 隐藏款单独居中展示 -->
+            <div class="flex justify-center">
+                <div class="w-full lg:w-1/3 bg-white hidden-tag cloud-border card-shadow overflow-hidden group hover:-translate-y-2 transition duration-300">
+                    <div class="h-80 overflow-hidden">
+                        <img src="images/yinchang.png" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-5 text-white">
+                        <span class="text-xs bg-white/30 px-2 py-1 rounded">限量隐藏款 | 抽中概率1/144</span>
+                        <h4 class="text-xl font-bold mt-2">星穹云兽｜终极隐藏款</h4>
+                        <p class="text-white/80 text-sm mt-2">全渐变星光云朵肌理、通体星光闪片、满铺蓝星环绕，整套天花板收藏级玩偶</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 购买流程板块（对应你原图的完整服务流程） -->
+    <section id="flow" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-darkBlue mb-3">完整购盒流程</h3>
+            <p class="text-gray-500">从选盒-拆盒-发货-售后一站式服务，拆盒无忧</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="text-center p-6 cloud-border bg-white card-shadow">
+                <div class="w-14 h-14 rounded-full bg-lightBlue flex items-center justify-center mx-auto mb-4 text-darkBlue text-xl">1</div>
+                <h5 class="font-bold text-lg mb-2">选择端盒/散抽</h5>
+                <p class="text-gray-400 text-sm">可单抽1个、端盒整套6个，端盒必不重复</p>
+            </div>
+            <div class="text-center p-6 cloud-border bg-white card-shadow">
+                <div class="w-14 h-14 rounded-full bg-lightBlue flex items-center justify-center mx-auto mb-4 text-darkBlue text-xl">2</div>
+                <h5 class="font-bold text-lg mb-2">在线拆盒预览</h5>
+                <p class="text-gray-400 text-sm">拆盒前可预览款式，不想重复可置换款式</p>
+            </div>
+            <div class="text-center p-6 cloud-border bg-white card-shadow">
+                <div class="w-14 h-14 rounded-full bg-lightBlue flex items-center justify-center mx-auto mb-4 text-darkBlue text-xl">3</div>
+                <h5 class="font-bold text-lg mb-2">盲盒打包封装</h5>
+                <p class="text-gray-400 text-sm">独立云朵礼盒包装，星星防尘袋包裹玩偶</p>
+            </div>
+            <div class="text-center p-6 cloud-border bg-white card-shadow">
+                <div class="w-14 h-14 rounded-full bg-lightBlue flex items-center justify-center mx-auto mb-4 text-darkBlue text-xl">4</div>
+                <h5 class="font-bold text-lg mb-2">顺丰极速发货</h5>
+                <p class="text-gray-400 text-sm">48小时内发出，破损免费补发售后无忧</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们板块 -->
+    <section id="about" class="bg-lightBlue py-20 px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-center">
+            <div class="md:w-1/2">
+                <h3 class="text-3xl font-bold text-darkBlue mb-5">关于 CloudStar 云星盲盒</h3>
+                <p class="text-gray-500 leading-relaxed mb-4">CloudStar专注治愈系云朵毛绒潮玩盲盒创作，主打蓝天云朵+蓝星星的清新治愈画风，全部玩偶采用软绒细腻材质，造型纤细柔和不臃肿，面向潮玩收藏、学生送礼、桌面摆件全场景打造。</p>
+                <p class="text-gray-500 leading-relaxed">整套盲盒经过数十次形象打磨，严格控制隐藏款出货概率，保证收藏稀缺性，上线至今收获数万潮玩玩家收藏好评。</p>
+                <div class="grid grid-cols-2 gap-4 mt-8">
+                    <div class="bg-white p-4 rounded-xl text-center">
+                        <div class="text-2xl font-bold text-darkBlue">6w+</div>
+                        <div class="text-sm text-gray-400">已售出盲盒数量</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl text-center">
+                        <div class="text-2xl font-bold text-darkBlue">7款</div>
+                        <div class="text-sm text-gray-400">全套完整系列款式</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl text-center">
+                        <div class="text-2xl font-bold text-darkBlue">98%</div>
+                        <div class="text-sm text-gray-400">玩家好评率</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-xl text-center">
+                        <div class="text-2xl font-bold text-darkBlue">1/144</div>
+                        <div class="text-sm text-gray-400">隐藏款出货概率</div>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 cloud-border overflow-hidden card-shadow">
+                <img src="images/quanjiafu.png" class="w-full h-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- 用户评价区域 -->
+    <section id="review" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-12">
+            <h3 class="text-3xl font-bold text-darkBlue mb-3">潮玩玩家真实评价</h3>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-white p-6 cloud-border card-shadow">
+                <div class="text-yellow-400 mb-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                <p class="text-gray-500 text-sm mb-4">云朵质感超级细腻，实物比图片还要软，蓝星星细节做得很精致，已经集齐全套六个常规款，正在蹲隐藏款！</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-mainBlue"></div>
+                    <span class="text-sm font-medium">小咩收藏家</span>
+                </div>
+            </div>
+            <div class="bg-white p-6 cloud-border card-shadow">
+                <div class="text-yellow-400 mb-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                <p class="text-gray-500 text-sm mb-4">买来送闺蜜的生日礼物，整套颜值超高，包装是蓝天云朵礼盒，六个小动物造型都不撞款，闺蜜超级喜欢！</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-darkBlue"></div>
+                    <span class="text-sm font-medium">芋泥啵啵冰</span>
+                </div>
+            </div>
+            <div class="bg-white p-6 cloud-border card-shadow">
+                <div class="text-yellow-400 mb-3"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star-half-o"></i></div>
+                <p class="text-gray-500 text-sm mb-4">抽了三端盒终于出隐藏款星穹云兽，渐变星光太绝了，摆在书桌当摆件氛围感直接拉满，闭眼入不亏！</p>
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 rounded-full bg-lightBlue"></div>
+                    <span class="text-sm font-medium">潮玩挖宝酱</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer class="bg-darkBlue text-white py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div>
+                <h4 class="text-xl font-bold mb-4">CloudStar 云星盲盒</h4>
+                <p class="text-white/60 text-sm">治愈云朵毛绒潮玩盲盒原创品牌</p>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4">快速导航</h5>
+                <div class="space-y-2 text-white/60 text-sm">
+                    <a href="#home" class="block">首页</a>
+                    <a href="#boxlist" class="block">盲盒全款式</a>
+                    <a href="#flow" class="block">购盒流程</a>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4">售后帮助</h5>
+                <div class="space-y-2 text-white/60 text-sm">
+                    <a href="#" class="block">破损补发</a>
+                    <a href="#" class="block">款式置换</a>
+                    <a href="#" class="block">隐藏款鉴定</a>
+                </div>
+            </div>
+            <div>
+                <h5 class="font-bold mb-4">联系我们</h5>
+                <div class="space-y-2 text-white/60 text-sm">
+                    <p>客服微信：cloudstar_box</p>
+                    <p>发货仓库：浙江义乌</p>
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto mt-10 pt-6 border-t border-white/20 text-center text-white/40 text-sm">
+            © 2026 CloudStar云星盲盒 版权所有
+        </div>
+    </footer>
+</body>
+</html>
